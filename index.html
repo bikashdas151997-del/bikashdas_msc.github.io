@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Bikash Das</title>
+    <title>Dr. Bikash Das | Assistant Professor</title>
     <style>
         :root {
             --primary: #2c3e50;
@@ -12,28 +12,60 @@
             --text: #333;
         }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; background: var(--bg); color: var(--text); }
-        .container { max-width: 800px; margin: 50px auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        header { border-bottom: 2px solid var(--bg); padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin: 0; color: var(--primary); }
-        .tagline { color: var(--accent); font-weight: bold; }
+        .container { max-width: 800px; margin: 40px auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        
+        /* Profile Image Styling */
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        header { border-bottom: 2px solid var(--bg); padding-bottom: 20px; margin-bottom: 30px; text-align: left; }
+        h1 { margin: 0; color: var(--primary); font-size: 2.2rem; }
+        .tagline { color: var(--accent); font-weight: bold; font-size: 1.1rem; margin-top: 5px; }
+        
         section { margin-bottom: 30px; }
-        h2 { border-left: 4px solid var(--accent); padding-left: 15px; color: var(--primary); font-size: 1.2rem; }
-        .item { margin-bottom: 15px; }
-        .item-title { font-weight: bold; display: block; }
+        h2 { border-left: 4px solid var(--accent); padding-left: 15px; color: var(--primary); font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .item { margin-bottom: 15px; padding-left: 5px; }
+        .item-title { font-weight: bold; display: block; color: var(--primary); }
         .item-meta { font-size: 0.9rem; color: #666; }
-        .links a { margin-right: 15px; text-decoration: none; color: var(--accent); font-weight: 500; }
-        .links a:hover { text-decoration: underline; }
+        
+        .links { margin-top: 15px; }
+        .links a { 
+            display: inline-block;
+            margin-right: 15px; 
+            text-decoration: none; 
+            color: white; 
+            background: var(--primary);
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+        .links a:hover { background: var(--accent); }
+        
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
+        <img src="profile.jpg.jpeg" alt="Dr. Bikash Das" class="profile-pic">
+        
         <h1>Dr. Bikash Das</h1>
-        <p class="tagline">M.Sc, Ph.D </p>
+        <p class="tagline">M.Sc., Ph.D. | Assistant Professor</p>
+        
         <div class="links">
-            <a href="mailto:bikashdas15.1997@gmail.com">Email</a>
-             <a href="#">https://scholar.google.com/citations?user=olKWSzgAAAAJ&hl=en&authuser=3</a>
+            <a href="mailto:bikashdas15.1997@gmail.com">Email Me</a>
+            <a href="https://scholar.google.com/citations?user=olKWSzgAAAAJ&hl=en&authuser=3" target="_blank">Google Scholar</a>
         </div>
     </header>
 
@@ -43,45 +75,44 @@
             <strong>Assistant Professor</strong><br>
             Department of Mathematics<br>
             Murkong Selek College, Jonai<br>
-            Dhemaji-787060, Assam, India
+            Dhemaji - 787060, Assam, India
         </p>
     </section>
 
     <section id="research">
         <h2>Research Interests</h2>
         <ul>
-            <li>CFD</li>
+            <li>Computational Fluid Dynamics (CFD)</li>
             <li>Fluid Flow in Porous Media</li>
             <li>Bioconvection</li>
-             <li>Nanofluid Flow</li>
+            <li>Nanofluid Flow</li>
         </ul>
     </section>
 
     <section id="education">
         <h2>Education</h2>
         <div class="item">
-            <span class="item-title">Ph.D in Mathematics</span>
+            <span class="item-title">Ph.D. in Mathematics</span>
             <span class="item-meta">Rajiv Gandhi University | 2021 - 2025</span>
-             </div>
-            <span class="item-title">M.Sc in Mathematics</span>
+        </div>
+        <div class="item">
+            <span class="item-title">M.Sc. in Mathematics</span>
             <span class="item-meta">Rajiv Gandhi University | 2019 - 2021</span>
         </div>
-             <span class="item-title">B.Sc in Mathematics</span>
+        <div class="item">
+            <span class="item-title">B.Sc. in Mathematics</span>
             <span class="item-meta">North Lakhimpur College (Autonomous) | 2016 - 2019</span>
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Key Projects</h2>
-        <ul>
-            <li><strong>Project Alpha:</strong> A brief description of what you achieved.</li>
-            <li><strong>Project Beta:</strong> Research focusing on the impact of X on Y.</li>
-        </ul>
+    <section id="publications">
+        <h2>Publications</h2>
+        <p>Information about research papers and publications can be found on my <a href="https://scholar.google.com/citations?user=olKWSzgAAAAJ" style="color: var(--accent);">Google Scholar profile</a>.</p>
     </section>
 
     <footer>
-        <p style="font-size: 0.8rem; color: #999; text-align: center; margin-top: 50px;">
-            &copy; 2025 Dr. Bikash Das. 
+        <p style="font-size: 0.8rem; color: #999; text-align: center; margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
+            &copy; 2025 Dr. Bikash Das. All Rights Reserved.
         </p>
     </footer>
 </div>
